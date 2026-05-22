@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>손재이 · Backend Developer Portfolio</title>
+  <meta name="description" content="서버/백엔드 개발자 손재이의 포트폴리오. Java/Spring Boot, Node.js 기반 프로젝트." />
+
+  <!-- Pretendard -->
+  <link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <!-- Fraunces for display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <a href="#" class="nav-logo">SJ<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <p class="eyebrow">BACKEND DEVELOPER · 2026</p>
+        <h1 class="hero-title">
+          데이터가 정확하게 흐르고,<br/>
+          서비스가 멈추지 않도록<br/>
+          <em>설계하는 개발자</em>
+        </h1>
+        <p class="hero-sub">
+          광운대학교 소프트웨어학부 인공지능전공 · 2026년 2월 졸업<br/>
+          Java / Spring Boot 주력, Node.js 활용 가능
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+          <a href="#contact" class="btn btn-ghost">연락하기</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-row">
+            <span class="hero-card-label">Name</span>
+            <span class="hero-card-value">손재이 · Son Jae-yi</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-label">Role</span>
+            <span class="hero-card-value">Server / Backend Developer</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-label">Focus</span>
+            <span class="hero-card-value">Spring Boot · MySQL · Redis · AWS</span>
+          </div>
+          <div class="hero-card-row">
+            <span class="hero-card-label">Status</span>
+            <span class="hero-card-value">
+              <span class="status-dot"></span> 2026 하반기 신입 공채 준비
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <p class="section-eyebrow">01 · ABOUT</p>
+    <h2 class="section-title">서비스의 뒷단을 책임지는 일</h2>
+
+    <div class="about-grid">
+      <p class="about-lead">
+        사용자가 보지 못하는 영역에서, 데이터가 어떤 길로 흐르고
+        어떻게 저장되며, 장애가 났을 때 어디서 멈추는지를 설계하는 일에
+        관심이 있습니다.
+      </p>
+      <div class="about-body">
+        <p>
+          현재 진행 중인 세 개의 프로젝트는 모두 <strong>실제 사용자에게 배포할 것을 목표</strong>로
+          만들고 있습니다. 토이 프로젝트로 끝나지 않고, 인증·결제·실시간 통신·
+          외부 API 연동 같은 실서비스 요소를 직접 다루는 과정에서 백엔드 개발자로서의
+          기본기를 쌓아가고 있습니다.
+        </p>
+        <p>
+          비트캠프 자바·스프링 양성과정에서 기초를 다졌고, 인턴십에서 웹 서비스
+          전체 흐름을 경험했습니다. 주 1회 CS 스터디와 코딩테스트 스터디를 병행하며,
+          꾸준히 면접 준비를 이어가고 있습니다.
+        </p>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-num">3</span>
+        <span class="stat-label">진행 중인 프로젝트</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">2</span>
+        <span class="stat-label">완료한 팀 프로젝트</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">3<span class="stat-unit">개월</span></span>
+        <span class="stat-label">인턴십 (개발 직무)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">1<span class="stat-unit">회</span></span>
+        <span class="stat-label">아이디어톤 수상</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section id="stack" class="section">
+    <p class="section-eyebrow">02 · TECH STACK</p>
+    <h2 class="section-title">기술 스택</h2>
+
+    <div class="stack-grid">
+      <div class="stack-card">
+        <h3 class="stack-card-title">Language &amp; Framework</h3>
+        <ul class="stack-list">
+          <li><span class="stack-key">주력</span> Java 17, Spring Boot 3, Spring Security</li>
+          <li><span class="stack-key">활용</span> Node.js, Express.js, TypeScript</li>
+          <li><span class="stack-key">테스트</span> JUnit 5</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <h3 class="stack-card-title">Database &amp; Infra</h3>
+        <ul class="stack-list">
+          <li><span class="stack-key">RDB</span> MySQL, Oracle</li>
+          <li><span class="stack-key">Cache</span> Redis</li>
+          <li><span class="stack-key">Container</span> Docker</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <h3 class="stack-card-title">Tools &amp; Collaboration</h3>
+        <ul class="stack-list">
+          <li><span class="stack-key">VCS</span> Git, GitHub</li>
+          <li><span class="stack-key">IDE</span> IntelliJ IDEA</li>
+          <li><span class="stack-key">API</span> Postman, REST API, Swagger</li>
+        </ul>
+      </div>
+
+      <div class="stack-card">
+        <h3 class="stack-card-title">Frontend (협업 시)</h3>
+        <ul class="stack-list">
+          <li><span class="stack-key">기본</span> HTML5, CSS3, JavaScript</li>
+          <li><span class="stack-key">활용</span> React, TypeScript</li>
+          <li><span class="stack-key">UI</span> Bootstrap</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <p class="section-eyebrow">03 · PROJECTS</p>
+    <h2 class="section-title">진행 중인 프로젝트</h2>
+    <p class="section-desc">
+      세 프로젝트 모두 실제 배포를 목표로 진행 중이며, 본인은 모두 <strong>백엔드</strong>를 담당하고 있습니다.
+    </p>
+
+    <!-- Moi -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-tag tag-progress">진행 중 · 출시 예정</span>
+        <span class="project-tag">2인 팀 · 백엔드 담당</span>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-text">
+          <h3 class="project-title">
+            Moi <span class="project-sub">/ 토스 미니앱</span>
+          </h3>
+          <p class="project-desc">
+            <strong>여러 명의 출발지에서 중간 지점을 찾아</strong>
+            만날 장소를 정하고, 일정을 잡고, 캘린더에 등록까지 한 번에 끝내는
+            <strong>Toss 인앱 웹뷰 서비스</strong>입니다. "강남에서 만날까 홍대에서 만날까"
+            30분째 핑퐁하는 단톡방을 3분 안에 정리하는 것이 목표입니다.
+          </p>
+
+          <h4 class="project-h4">담당 영역</h4>
+          <ul class="project-list">
+            <li>Next.js API Routes 기반 백엔드 API 설계 및 구현</li>
+            <li>Toss <code>appLogin</code> 인증 흐름 구현 (authorizationCode → AccessToken 교환 → <code>loginMe</code> 사용자 정보 획득)</li>
+            <li>mTLS 클라이언트 인증서 기반 Toss 서버 연동</li>
+            <li>모임/참여자/일정 도메인 DB 스키마 설계 (PostgreSQL + 7일 TTL)</li>
+            <li>카카오 로컬 API 연동을 통한 주소 → 좌표 변환 및 중간 지점 계산</li>
+          </ul>
+
+          <h4 class="project-h4">기술적 포인트</h4>
+          <ul class="project-list">
+            <li><strong>인증 보안</strong> · 개인정보 암호화 전달 + 서버 복호화, AccessToken / RefreshToken 만료 처리</li>
+            <li><strong>외부 API 통합</strong> · Toss SDK, 카카오맵, Google Calendar 딥링크를 하나의 흐름으로 묶음</li>
+            <li><strong>임시 데이터 관리</strong> · 모임 데이터에 TTL을 두어 개인정보(출발지) 보관 기간 최소화</li>
+          </ul>
+        </div>
+
+        <div class="project-visual">
+          <img src="images/moi_portfolio.png" alt="Moi 프로젝트 화면" />
+        </div>
+      </div>
+
+      <div class="project-stack">
+        <span>Next.js API</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>mTLS Auth</span>
+        <span>Toss appLogin</span>
+        <span>Kakao API</span>
+      </div>
+    </article>
+
+    <!-- 말해코딩 -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-tag tag-progress">진행 중 · 졸업작품 리팩토링</span>
+        <span class="project-tag">2인 팀 · 백엔드 담당</span>
+      </div>
+
+      <div class="project-grid project-grid-reverse">
+        <div class="project-text">
+          <h3 class="project-title">
+            말해코딩 <span class="project-sub">/ MalhaeCoding</span>
+          </h3>
+          <p class="project-desc">
+            <strong>"하루 5분, 출퇴근길에 푸는 파이썬 한 문제."</strong>
+            누구나 핸드폰에 설치해서 가볍게 코딩을 시작할 수 있는
+            <strong>모바일 코딩 학습 앱</strong>입니다. 기존 Node.js + 웹 기반의
+            졸업작품을 <strong>Java / Spring Boot 구조로 전면 리팩토링</strong>하며
+            네이티브 앱 형태로 디벨롭하고 있습니다.
+          </p>
+
+          <h4 class="project-h4">담당 영역</h4>
+          <ul class="project-list">
+            <li>Spring Boot 3 기반 백엔드 도메인 재설계 (auth, user, quiz, gamification, league)</li>
+            <li>Spring Security + JWT + OAuth2 (Google) 인증 흐름 구현, Refresh Token 회전 적용</li>
+            <li>MySQL + Redis를 Docker Compose 환경에서 통합 운영</li>
+            <li>OpenAI API 연동을 통한 코드 채점 및 문제 생성 기능 구현</li>
+            <li>Spring WebSocket (STOMP) + Redis ZSet 기반 실시간 주간 리그 랭킹 설계</li>
+          </ul>
+
+          <h4 class="project-h4">기술적 포인트</h4>
+          <ul class="project-list">
+            <li><strong>AI 비용 최적화 설계</strong> · 시드 문제 50개를 Few-shot 예시로 활용 + Spring Batch 야간 사전 생성으로 OpenAI API 호출 비용 절감 구조</li>
+            <li><strong>실시간 랭킹</strong> · Redis ZSet으로 30명 단위 리그의 순위를 O(log N)에 갱신, WebSocket으로 실시간 전송</li>
+            <li><strong>아키텍처 마이그레이션</strong> · Node.js 기반의 기존 로직을 JPA + 도메인 분리 구조로 재설계하며 두 스택의 트레이드오프를 직접 체득</li>
+          </ul>
+        </div>
+
+        <div class="project-visual">
+          <img src="images/portfolio-malhaecoding.png" alt="말해코딩 프로젝트 화면" />
+        </div>
+      </div>
+
+      <div class="project-stack">
+        <span>Java 17</span>
+        <span>Spring Boot 3</span>
+        <span>Spring Security</span>
+        <span>JWT / OAuth2</span>
+        <span>MySQL</span>
+        <span>Redis</span>
+        <span>Docker</span>
+        <span>OpenAI API</span>
+        <span>WebSocket / STOMP</span>
+      </div>
+    </article>
+
+    <!-- PageMate -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-tag tag-progress">실배포 준비 중</span>
+        <span class="project-tag">2인 팀 · 백엔드 담당</span>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-text">
+          <h3 class="project-title">
+            PageMate <span class="project-sub">/ 페이지메이트</span>
+          </h3>
+          <p class="project-desc">
+            <strong>교환독서를 하고 싶지만 함께할 사람을 찾지 못했던 독자들을 연결하는 플랫폼</strong>입니다.
+            책 여백에 메모를 남기며 책을 바꿔 읽고, 다시 만나 돌려받는
+            <em>"가장 조용하고 깊은 독서 교류"</em>를 모바일 앱으로 구현했습니다.
+          </p>
+
+          <h4 class="project-h4">담당 영역</h4>
+          <ul class="project-list">
+            <li>Spring Boot 3 백엔드 도메인 설계 — 사용자 / 도서 / 교환 요청 / 약속 / 채팅 / 평가</li>
+            <li>OAuth 2.0 (카카오 · 구글) + JWT 인증 흐름</li>
+            <li>WebSocket (STOMP) 기반 1:1 실시간 채팅 구현</li>
+            <li>카카오 책 검색 API 연동을 통한 도서 정보 수집 (이미지 URL만 저장하여 스토리지 비용 0)</li>
+            <li><strong>취향(장르) + 위치(행정구역) 기반 매칭 로직</strong> 설계 및 구현</li>
+            <li>FCM 푸시 알림 — 요청 수신 · 약속문 동의 · D-3 / D-1 / D-Day 반납 알림</li>
+          </ul>
+
+          <h4 class="project-h4">기술적 포인트</h4>
+          <ul class="project-list">
+            <li><strong>도메인 상태 머신</strong> · 요청 → 수락 → 약속문 동의 → 1차 교환 → 2차 교환 → 평가까지의 단계를 명확한 상태로 모델링</li>
+            <li><strong>스토리지 비용 최적화</strong> · 카카오 API의 표지 URL만 저장하는 구조로 별도 이미지 스토리지 없이 MVP 완성</li>
+            <li><strong>약속 기반 신뢰 시스템</strong> · 약속문 동의 후에만 채팅이 열리는 흐름으로 안전한 거래 환경 설계</li>
+          </ul>
+        </div>
+
+        <div class="project-visual">
+          <img src="images/PageMate_Portfolio.png" alt="PageMate 프로젝트 화면" />
+        </div>
+      </div>
+
+      <div class="project-stack">
+        <span>Java 17</span>
+        <span>Spring Boot 3</span>
+        <span>Spring Security</span>
+        <span>JWT / OAuth2</span>
+        <span>MySQL</span>
+        <span>WebSocket / STOMP</span>
+        <span>FCM</span>
+        <span>Kakao Book API</span>
+      </div>
+    </article>
+
+    <!-- 이전 프로젝트 -->
+    <h3 class="subsection-title">이전 프로젝트</h3>
+
+    <div class="prev-grid">
+      <article class="prev-card">
+        <h4 class="prev-title">GPTERS</h4>
+        <p class="prev-desc">
+          사용자 수준에 맞는 알고리즘 문제를 AI로 생성하고 풀이 경험을 제공하는 웹 플랫폼.
+          백엔드에서 문제 생성 / 저장 / 조회 API와 사용자 수준별 풀이 분기를 담당했습니다.
+        </p>
+        <p class="prev-highlight">
+          <strong>문제 해결 경험</strong> · OpenAI 응답 파싱 오류와 DB 스키마 불일치 문제를
+          생성·파싱·저장 단계로 분리해 원인을 추적하고, 응답 파싱 유틸과 쿼리 구조를 정리하여
+          기능 안정성을 확보했습니다.
+        </p>
+        <div class="prev-stack">
+          <span>Node.js</span><span>MySQL</span><span>React</span><span>TypeScript</span><span>OpenAI API</span>
+        </div>
+      </article>
+
+      <article class="prev-card">
+        <h4 class="prev-title">어울림 (UWL)</h4>
+        <p class="prev-desc">
+          10대 · 20대 학생들을 타겟으로 한 SNS 서비스.
+          타임라인 / 익명 ASK 게시판 / 활동 점수 기반 학교 랭킹 / 꽃 보내기 /
+          커플 타임라인 및 커플 캘린더 기능을 구현했습니다.
+        </p>
+        <p class="prev-highlight">
+          <strong>경험한 것</strong> · Java + Spring 기반으로 화면 → 서버 → DB의 흐름이
+          유기적으로 동작하는 구조를 설계하며 웹 애플리케이션 전반을 익혔습니다.
+        </p>
+        <div class="prev-stack">
+          <span>Java</span><span>Spring</span><span>Oracle</span><span>JavaScript</span><span>Bootstrap</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section">
+    <p class="section-eyebrow">04 · EXPERIENCE</p>
+    <h2 class="section-title">경험 &amp; 교육</h2>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-date">2025.01 — 2025.08</div>
+        <div class="tl-body">
+          <h3 class="tl-title">스타벅스 <span class="tl-sub">바리스타</span></h3>
+          <p>
+            주문이 몰리는 시간대에 우선순위를 빠르게 판단해 업무를 분담하고,
+            팀원들과 협업하며 매장 운영이 원활하게 이루어지도록 했습니다.
+            정해진 레시피와 운영 기준을 지키며 작은 실수가 전체 서비스 경험에
+            영향을 줄 수 있다는 점을 배웠고, 일관된 품질을 유지하는 책임감을 길렀습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2023.06 — 2023.08</div>
+        <div class="tl-body">
+          <h3 class="tl-title">탑존 <span class="tl-sub">개발 인턴</span></h3>
+          <p>
+            AI를 활용해 마케팅용 SNS 문구를 자동 생성하는 웹 시스템의 주요 기능 개발을 담당했습니다.
+            사용자 입력값을 받아 결과를 생성하고 보여주는 흐름을 직접 구현했으며,
+            화면 구성부터 서버 로직, DB 연동까지 전반적인 기능 개발에 폭넓게 관여하면서
+            웹 서비스의 전체 동작 구조를 실무에 가깝게 이해할 수 있었습니다.
+          </p>
+          <div class="tl-stack">
+            <span>Node.js</span><span>Express</span><span>MySQL</span><span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2022.05 — 2024.02</div>
+        <div class="tl-body">
+          <h3 class="tl-title">올리브영 <span class="tl-sub">아르바이트</span></h3>
+          <p>
+            고객 응대 · 상품 진열 · 유통기한 관리 등 매장 운영 전반을 담당하며
+            반복적인 업무 속에서도 꼼꼼함과 책임감을 길렀습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2024.02 — 2024.08</div>
+        <div class="tl-body">
+          <h3 class="tl-title">ILSC Language School <span class="tl-sub">호주 어학연수</span></h3>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2023.05</div>
+        <div class="tl-body">
+          <h3 class="tl-title">UMC NEO IDEATHON <span class="tl-sub">우수상</span></h3>
+          <p>University MakeUs Challenge (UMC) 대외활동</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-date">2019.09 — 2020.03</div>
+        <div class="tl-body">
+          <h3 class="tl-title">비트캠프 <span class="tl-sub">응용 SW엔지니어링 / 전자정부 표준 프레임워크 양성과정</span></h3>
+          <p>
+            Java와 Spring 기반의 웹 개발 과정을 학습하며 전자정부 표준 프레임워크 환경에서
+            웹 애플리케이션 구조를 익혔습니다. Oracle을 활용한 데이터 처리와
+            화면 → 서버 → 데이터베이스의 연결 구조를 경험하며 자바 웹 개발의 기초를 다졌습니다.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cert-row">
+      <h3 class="cert-title">자격증</h3>
+      <ul class="cert-list">
+        <li><span class="cert-year">2021.07</span> 네트워크관리사 2급 · 한국정보통신자격협회(ICQA)</li>
+        <li><span class="cert-year">2021.03</span> 정보처리산업기사 · 과학기술정보통신부 / 한국산업인력공단</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-contact">
+    <p class="section-eyebrow">05 · CONTACT</p>
+    <h2 class="section-title">함께 일하고 싶으시다면</h2>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:jae2son@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">jae2son@gmail.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/wo2ek8" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/wo2ek8</span>
+      </a>
+      <div class="contact-card">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">010-5096-5091</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 손재이 · Son Jae-yi</p>
+    <p class="footer-sub">Last updated · 2026.05</p>
+  </footer>
+
+</body>
+</html>
