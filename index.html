@@ -54,7 +54,7 @@
         <div class="hero-card">
           <div class="hero-card-row">
             <span class="hero-card-label">Name</span>
-            <span class="hero-card-value">손재이 · Son Jaei</span>
+            <span class="hero-card-value">손재이 · Son Jae-i</span>
           </div>
           <div class="hero-card-row">
             <span class="hero-card-label">Role</span>
@@ -88,9 +88,9 @@
       </p>
       <div class="about-body">
         <p>
-          현재 진행 중인 세 개의 프로젝트는 모두 <strong>실제 사용자에게 배포할 것을 목표</strong>로
-          만들고 있습니다. 토이 프로젝트로 끝나지 않고, 인증·결제·실시간 통신·
-          외부 API 연동 같은 실서비스 요소를 직접 다루는 과정에서 백엔드 개발자로서의
+          현재 진행 중인 두 개의 프로젝트는 모두 <strong>실제 사용자에게 배포할 것을 목표</strong>로
+          만들고 있으며, PageMate는 App Store 심사 제출까지 마쳤습니다. 토이 프로젝트로 끝나지 않고, 인증·실시간 통신·
+          외부 API 연동·클라우드 배포 같은 실서비스 요소를 직접 다루는 과정에서 백엔드 개발자로서의
           기본기를 쌓아가고 있습니다.
         </p>
         <p>
@@ -103,12 +103,12 @@
 
     <div class="stat-row">
       <div class="stat">
-        <span class="stat-num">3</span>
+        <span class="stat-num">2</span>
         <span class="stat-label">진행 중인 프로젝트</span>
       </div>
       <div class="stat">
-        <span class="stat-num">2</span>
-        <span class="stat-label">완료한 팀 프로젝트</span>
+        <span class="stat-num">1</span>
+        <span class="stat-label">App Store 심사 제출</span>
       </div>
       <div class="stat">
         <span class="stat-num">3<span class="stat-unit">개월</span></span>
@@ -170,119 +170,13 @@
     <p class="section-eyebrow">03 · PROJECTS</p>
     <h2 class="section-title">진행 중인 프로젝트</h2>
     <p class="section-desc">
-      세 프로젝트 모두 실제 배포를 목표로 진행 중이며, 본인은 모두 <strong>백엔드</strong>를 담당하고 있습니다.
+      두 프로젝트 모두 실제 배포를 목표로 진행 중이며, 본인은 모두 <strong>백엔드</strong>를 담당하고 있습니다.
     </p>
-
-    <!-- Moi -->
-    <article class="project">
-      <div class="project-meta">
-        <span class="project-tag tag-progress">진행 중 · 출시 예정</span>
-        <span class="project-tag">2인 팀 · 백엔드 담당</span>
-      </div>
-
-      <div class="project-grid">
-        <div class="project-text">
-          <h3 class="project-title">
-            Moi <span class="project-sub">/ 토스 미니앱</span>
-          </h3>
-          <p class="project-desc">
-            <strong>여러 명의 출발지에서 중간 지점을 찾아</strong>
-            만날 장소를 정하고, 일정을 잡고, 캘린더에 등록까지 한 번에 끝내는
-            <strong>Toss 인앱 웹뷰 서비스</strong>입니다. "강남에서 만날까 홍대에서 만날까"
-            30분째 핑퐁하는 단톡방을 3분 안에 정리하는 것이 목표입니다.
-          </p>
-
-          <h4 class="project-h4">담당 영역</h4>
-          <ul class="project-list">
-            <li>Next.js API Routes 기반 백엔드 API 설계 및 구현</li>
-            <li>Toss <code>appLogin</code> 인증 흐름 구현 (authorizationCode → AccessToken 교환 → <code>loginMe</code> 사용자 정보 획득)</li>
-            <li>mTLS 클라이언트 인증서 기반 Toss 서버 연동</li>
-            <li>모임/참여자/일정 도메인 DB 스키마 설계 (PostgreSQL + 7일 TTL)</li>
-            <li>카카오 로컬 API 연동을 통한 주소 → 좌표 변환 및 중간 지점 계산</li>
-          </ul>
-
-          <h4 class="project-h4">기술적 포인트</h4>
-          <ul class="project-list">
-            <li><strong>인증 보안</strong> · 개인정보 암호화 전달 + 서버 복호화, AccessToken / RefreshToken 만료 처리</li>
-            <li><strong>외부 API 통합</strong> · Toss SDK, 카카오맵, Google Calendar 딥링크를 하나의 흐름으로 묶음</li>
-            <li><strong>임시 데이터 관리</strong> · 모임 데이터에 TTL을 두어 개인정보(출발지) 보관 기간 최소화</li>
-          </ul>
-        </div>
-
-        <div class="project-visual">
-          <img src="images/moi_portfolio.png" alt="Moi 프로젝트 화면" />
-        </div>
-      </div>
-
-      <div class="project-stack">
-        <span>Next.js API</span>
-        <span>TypeScript</span>
-        <span>PostgreSQL</span>
-        <span>mTLS Auth</span>
-        <span>Toss appLogin</span>
-        <span>Kakao API</span>
-      </div>
-    </article>
-
-    <!-- 말해코딩 -->
-    <article class="project">
-      <div class="project-meta">
-        <span class="project-tag tag-progress">진행 중 · 졸업작품 리팩토링</span>
-        <span class="project-tag">2인 팀 · 백엔드 담당</span>
-      </div>
-
-      <div class="project-grid project-grid-reverse">
-        <div class="project-text">
-          <h3 class="project-title">
-            말해코딩 <span class="project-sub">/ MalhaeCoding</span>
-          </h3>
-          <p class="project-desc">
-            <strong>"하루 5분, 출퇴근길에 푸는 파이썬 한 문제."</strong>
-            누구나 핸드폰에 설치해서 가볍게 코딩을 시작할 수 있는
-            <strong>모바일 코딩 학습 앱</strong>입니다. 기존 Node.js + 웹 기반의
-            졸업작품을 <strong>Java / Spring Boot 구조로 전면 리팩토링</strong>하며
-            네이티브 앱 형태로 디벨롭하고 있습니다.
-          </p>
-
-          <h4 class="project-h4">담당 영역</h4>
-          <ul class="project-list">
-            <li>Spring Boot 3 기반 백엔드 도메인 재설계 (auth, user, quiz, gamification, league)</li>
-            <li>Spring Security + JWT + OAuth2 (Google) 인증 흐름 구현, Refresh Token 회전 적용</li>
-            <li>MySQL + Redis를 Docker Compose 환경에서 통합 운영</li>
-            <li>OpenAI API 연동을 통한 코드 채점 및 문제 생성 기능 구현</li>
-            <li>Spring WebSocket (STOMP) + Redis ZSet 기반 실시간 주간 리그 랭킹 설계</li>
-          </ul>
-
-          <h4 class="project-h4">기술적 포인트</h4>
-          <ul class="project-list">
-            <li><strong>AI 비용 최적화 설계</strong> · 시드 문제 50개를 Few-shot 예시로 활용 + Spring Batch 야간 사전 생성으로 OpenAI API 호출 비용 절감 구조</li>
-            <li><strong>실시간 랭킹</strong> · Redis ZSet으로 30명 단위 리그의 순위를 O(log N)에 갱신, WebSocket으로 실시간 전송</li>
-            <li><strong>아키텍처 마이그레이션</strong> · Node.js 기반의 기존 로직을 JPA + 도메인 분리 구조로 재설계하며 두 스택의 트레이드오프를 직접 체득</li>
-          </ul>
-        </div>
-
-        <div class="project-visual">
-          <img src="images/portfolio-malhaecoding.png" alt="말해코딩 프로젝트 화면" />
-        </div>
-      </div>
-
-      <div class="project-stack">
-        <span>Java 17</span>
-        <span>Spring Boot 3</span>
-        <span>Spring Security</span>
-        <span>JWT / OAuth2</span>
-        <span>MySQL</span>
-        <span>Redis</span>
-        <span>Docker</span>
-        <span>OpenAI API</span>
-        <span>WebSocket / STOMP</span>
-      </div>
-    </article>
 
     <!-- PageMate -->
     <article class="project">
       <div class="project-meta">
-        <span class="project-tag tag-progress">실배포 준비 중</span>
+        <span class="project-tag tag-progress">App Store 심사 제출 완료</span>
         <span class="project-tag">2인 팀 · 백엔드 담당</span>
       </div>
 
@@ -295,6 +189,7 @@
             <strong>교환독서를 하고 싶지만 함께할 사람을 찾지 못했던 독자들을 연결하는 플랫폼</strong>입니다.
             책 여백에 메모를 남기며 책을 바꿔 읽고, 다시 만나 돌려받는
             <em>"가장 조용하고 깊은 독서 교류"</em>를 모바일 앱으로 구현했습니다.
+            EAS 프로덕션 빌드를 거쳐 <strong>App Store Connect 심사 제출까지 완료</strong>했습니다.
           </p>
 
           <h4 class="project-h4">담당 영역</h4>
@@ -305,13 +200,14 @@
             <li>카카오 책 검색 API 연동을 통한 도서 정보 수집 (이미지 URL만 저장하여 스토리지 비용 0)</li>
             <li><strong>취향(장르) + 위치(행정구역) 기반 매칭 로직</strong> 설계 및 구현</li>
             <li>FCM 푸시 알림 — 요청 수신 · 약속문 동의 · D-3 / D-1 / D-Day 반납 알림</li>
+            <li>Railway 클라우드 백엔드 배포 — MySQL 연동, Actuator health check 운영</li>
           </ul>
 
           <h4 class="project-h4">기술적 포인트</h4>
           <ul class="project-list">
-            <li><strong>도메인 상태 머신</strong> · 요청 → 수락 → 약속문 동의 → 1차 교환 → 2차 교환 → 평가까지의 단계를 명확한 상태로 모델링</li>
+            <li><strong>도메인 상태 머신</strong> · 요청 → 수락 → 약속문 동의 → 1차 교환 → 2차 교환 → 평가까지의 단계를 명확한 상태로 모델링, 교환 확정은 양측(요청자/수락자)이 각각 확인해야 넘어가는 <strong>이중 확정 로직</strong>으로 설계</li>
             <li><strong>스토리지 비용 최적화</strong> · 카카오 API의 표지 URL만 저장하는 구조로 별도 이미지 스토리지 없이 MVP 완성</li>
-            <li><strong>약속 기반 신뢰 시스템</strong> · 약속문 동의 후에만 채팅이 열리는 흐름으로 안전한 거래 환경 설계</li>
+            <li><strong>약속 기반 신뢰 시스템</strong> · 약속문 동의 후에만 채팅이 열리는 흐름으로 안전한 거래 환경 설계, 정확한 주소 대신 동네명 기반 거리 표시로 개인정보 노출 최소화</li>
           </ul>
         </div>
 
@@ -329,6 +225,60 @@
         <span>WebSocket / STOMP</span>
         <span>FCM</span>
         <span>Kakao Book API</span>
+        <span>Railway</span>
+      </div>
+    </article>
+
+    <!-- Moi -->
+    <article class="project">
+      <div class="project-meta">
+        <span class="project-tag tag-progress">진행 중 · 정식 출시 준비</span>
+        <span class="project-tag">2인 팀 · 백엔드 담당</span>
+      </div>
+
+      <div class="project-grid project-grid-reverse">
+        <div class="project-text">
+          <h3 class="project-title">
+            Moi <span class="project-sub">/ 토스 미니앱</span>
+          </h3>
+          <p class="project-desc">
+            <strong>여러 명의 출발지에서 중간 지점을 찾아</strong>
+            만날 장소를 정하고, 일정 확정까지 앱 안에서 한 번에 끝내는
+            <strong>Toss 인앱 미니앱(Apps-in-Toss)</strong>입니다. "강남에서 만날까 홍대에서 만날까"
+            30분째 핑퐁하는 단톡방을 3분 안에 정리하는 것이 목표입니다.
+          </p>
+
+          <h4 class="project-h4">담당 영역</h4>
+          <ul class="project-list">
+            <li>Hono + TypeScript 기반 백엔드 API 설계 및 구현 — 모임 생성 / 조회 / 참여 / 마감 / 확정 라우트</li>
+            <li>zod 스키마 검증 + <code>{ok, error}</code> 통일 에러 응답 규격 설계</li>
+            <li>모임 / 참여자 도메인 PostgreSQL 스키마 설계 (7일 TTL) 및 Railway 배포</li>
+            <li>카카오 로컬 API 연동을 통한 주소 → 좌표 변환</li>
+            <li><strong>L2 하이브리드 중간 지점 알고리즘</strong> 설계 및 구현</li>
+            <li>Toss <code>appLogin</code> 인증 흐름 · mTLS 클라이언트 인증서 기반 Toss 서버 연동</li>
+          </ul>
+
+          <h4 class="project-h4">기술적 포인트</h4>
+          <ul class="project-list">
+            <li><strong>중간 지점 알고리즘</strong> · 좌표 기반 L2 거리 계산에 하이브리드 보정을 더해 여러 출발지의 실질적 최적 중간 지점을 산출</li>
+            <li><strong>계약 우선(Contract-first) 개발</strong> · mock 인증 · geocode mock으로 외부 API 심사를 기다리지 않고 전체 시나리오 스모크 테스트를 먼저 통과시킨 뒤 실 연동으로 교체하는 구조</li>
+            <li><strong>임시 데이터 관리</strong> · 모임 데이터에 TTL을 두어 개인정보(출발지) 보관 기간 최소화</li>
+          </ul>
+        </div>
+
+        <div class="project-visual">
+          <img src="images/moi_portfolio.png" alt="Moi 프로젝트 화면" />
+        </div>
+      </div>
+
+      <div class="project-stack">
+        <span>Hono</span>
+        <span>TypeScript</span>
+        <span>PostgreSQL</span>
+        <span>Railway</span>
+        <span>Toss appLogin</span>
+        <span>mTLS Auth</span>
+        <span>Kakao Local API</span>
       </div>
     </article>
 
@@ -475,8 +425,8 @@
   </section>
 
   <footer class="footer">
-    <p>© 2026 손재이 · Son Jaei</p>
-    <p class="footer-sub">Last updated · 2026.05</p>
+    <p>© 2026 손재이 · Son Jae-i</p>
+    <p class="footer-sub">Last updated · 2026.07</p>
   </footer>
 
 </body>
