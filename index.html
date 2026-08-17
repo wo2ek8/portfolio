@@ -62,7 +62,7 @@
           </div>
           <div class="hero-card-row">
             <span class="hero-card-label">Focus</span>
-            <span class="hero-card-value">Spring Boot · MySQL · Redis · AWS</span>
+            <span class="hero-card-value">Spring Boot · MySQL · Railway</span>
           </div>
           <div class="hero-card-row">
             <span class="hero-card-label">Status</span>
@@ -130,7 +130,7 @@
       <div class="stack-card">
         <h3 class="stack-card-title">Language &amp; Framework</h3>
         <ul class="stack-list">
-          <li><span class="stack-key">주력</span> Java 17, Spring Boot 3, Spring Security</li>
+          <li><span class="stack-key">주력</span> Java 21, Spring Boot 3.4, Spring Security</li>
           <li><span class="stack-key">활용</span> Node.js, Express.js, TypeScript</li>
           <li><span class="stack-key">테스트</span> JUnit 5</li>
         </ul>
@@ -140,8 +140,8 @@
         <h3 class="stack-card-title">Database &amp; Infra</h3>
         <ul class="stack-list">
           <li><span class="stack-key">RDB</span> MySQL, Oracle</li>
-          <li><span class="stack-key">Cache</span> Redis</li>
-          <li><span class="stack-key">Container</span> Docker</li>
+          <li><span class="stack-key">ORM</span> JPA, QueryDSL</li>
+          <li><span class="stack-key">Infra</span> Railway, GitHub Actions(CI), Flyway</li>
         </ul>
       </div>
 
@@ -194,19 +194,20 @@
 
           <h4 class="project-h4">담당 영역</h4>
           <ul class="project-list">
-            <li>Spring Boot 3 백엔드 도메인 설계 — 사용자 / 도서 / 교환 요청 / 약속 / 채팅 / 평가</li>
+            <li>Spring Boot 백엔드 도메인 설계 — 사용자 / 도서 / 교환 요청 / 약속 / 채팅 / 평가 / 알림</li>
             <li>OAuth 2.0 (카카오 · 구글) + JWT 인증 흐름</li>
-            <li>WebSocket (STOMP) 기반 1:1 실시간 채팅 구현</li>
-            <li>카카오 책 검색 API 연동을 통한 도서 정보 수집 (이미지 URL만 저장하여 스토리지 비용 0)</li>
-            <li><strong>취향(장르) + 위치(행정구역) 기반 매칭 로직</strong> 설계 및 구현</li>
-            <li>FCM 푸시 알림 — 요청 수신 · 약속문 동의 · D-3 / D-1 / D-Day 반납 알림</li>
+            <li>WebSocket (STOMP) 기반 1:1 실시간 채팅 — <strong>CONNECT 프레임 JWT 인증(ChannelInterceptor)</strong>으로 세션리스 보안을 실시간 계층까지 유지</li>
+            <li>카카오 책 검색 API 연동을 통한 도서 정보 수집 (표지는 URL만 저장) · 프로필/채팅 이미지는 Cloudinary CDN 업로드</li>
+            <li><strong>취향(장르) + 동네 기반 도서 노출 정책</strong> 설계 — 콜드스타트를 고려해 반경 하드필터 대신 동네 부분일치 노출</li>
+            <li><strong>Expo Push 알림</strong> (FCM 대비 트레이드오프 비교 후 채택) — 요청 수신 · 약속문 동의 · D-3 / D-1 / D-Day 반납 알림</li>
             <li>Railway 클라우드 백엔드 배포 — MySQL 연동, Actuator health check 운영</li>
+            <li>GitHub Actions CI 구축 — 백엔드 테스트 + JaCoCo 커버리지, 프론트 타입체크</li>
           </ul>
 
           <h4 class="project-h4">기술적 포인트</h4>
           <ul class="project-list">
-            <li><strong>도메인 상태 머신</strong> · 요청 → 수락 → 약속문 동의 → 1차 교환 → 2차 교환 → 평가까지의 단계를 명확한 상태로 모델링, 교환 확정은 양측(요청자/수락자)이 각각 확인해야 넘어가는 <strong>이중 확정 로직</strong>으로 설계</li>
-            <li><strong>스토리지 비용 최적화</strong> · 카카오 API의 표지 URL만 저장하는 구조로 별도 이미지 스토리지 없이 MVP 완성</li>
+            <li><strong>도메인 상태 머신</strong> · 요청 → 수락 → 약속문 동의 → 일정 확정 → 1차 교환 → 2차 교환 → 평가까지를 <strong>9개 상태의 상태 머신</strong>으로 모델링, 교환 확정은 양측(요청자/수락자)이 각각 확인해야 넘어가는 <strong>이중 확정 로직</strong>으로 설계</li>
+            <li><strong>이미지 스토리지 전략</strong> · 도서 표지는 카카오 URL 참조로 비용 없이 해결하고, 사용자 업로드 이미지는 ImageStorage 인터페이스로 추상화해 Cloudinary를 교체 가능한 경계 뒤에 배치</li>
             <li><strong>약속 기반 신뢰 시스템</strong> · 약속문 동의 후에만 채팅이 열리는 흐름으로 안전한 거래 환경 설계, 정확한 주소 대신 동네명 기반 거리 표시로 개인정보 노출 최소화</li>
           </ul>
         </div>
@@ -217,15 +218,19 @@
       </div>
 
       <div class="project-stack">
-        <span>Java 17</span>
-        <span>Spring Boot 3</span>
+        <span>Java 21</span>
+        <span>Spring Boot 3.4</span>
         <span>Spring Security</span>
         <span>JWT / OAuth2</span>
         <span>MySQL</span>
+        <span>QueryDSL</span>
+        <span>Flyway</span>
         <span>WebSocket / STOMP</span>
-        <span>FCM</span>
+        <span>Expo Push</span>
+        <span>Cloudinary</span>
         <span>Kakao Book API</span>
         <span>Railway</span>
+        <span>GitHub Actions</span>
       </div>
     </article>
 
@@ -426,7 +431,7 @@
 
   <footer class="footer">
     <p>© 2026 손재이 · Son Jae-i</p>
-    <p class="footer-sub">Last updated · 2026.07</p>
+    <p class="footer-sub">Last updated · 2026.08</p>
   </footer>
 
 </body>
